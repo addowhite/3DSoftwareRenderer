@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "build",
+            "type": "shell",
+            "command": "gcc -Wall -c main.c & gcc -c SDL2_gfxPrimitives.c & gcc -c SDL2_rotozoom.c & gcc main.o SDL2_gfxPrimitives.o SDL2_rotozoom.o -lmingw32 -lSDL2main -lSDL2 -o main & main",
+            "problemMatcher": []
+        }
+    ]
+}
